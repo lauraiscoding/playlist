@@ -23,7 +23,7 @@ In this unit, coders will create the classic game of tic tac toe in their browse
 - [x] Repeat these steps for song artist, song length, image, and link
 
 #### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 ## Day 2
 

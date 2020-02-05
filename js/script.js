@@ -1,37 +1,50 @@
-$("#add").click(function(){
-    let songNames =[""];
-        songNames.push($("#song").val());
-    songNames.foreach(function(Name){
+let Song =["Hiding"];
 
-  $("#songs").append("<li>" + Name + "</li>");
+let Artists = ["Florence"];
+
+let Duration = ["2:33"];
+
+let imageAlbum = ["https://images-na.ssl-images-amazon.com/images/I/71tp8YpD02L._SL1428_.jpg"];
+
+let Links = ["https://youtu.be/d7OoIquEdsM"];
+
+    $("#add").click(function(){
+    
+        Song.push($("#song").val());
+    Song.forEach(function(Name){
+
+  $("#songs").append(  Name );
     });
 
-    let Artists = [];
+    
        Artists.push($("#artist").val());
-    Artists.foreach(function(Singer){
+    Artists.forEach(function(Singer){
 
-  $("#artists").append("<li>" + Singer + "</li>");
+  $("#artists").append( Singer );
     });
 
-    let Duration = [];
+    Duration.push($("#lengths").val());
+    Duration.forEach(function(length){
 
-    Duration.foreach(function(length){
-
-  $("#lengths").append("<li>" + length + "</li>");
+  $("#lengths").append( length );
     });
 
-    let imageAlbum = [];
+    
+    imageAlbum.push($("#images").val());
+    imageAlbum.forEach(function(image){
 
-    imageAlbum.foreach(function(image){
-
-  $("#images").append("<li>" + image + "</li>");
+  $("#images").append("<img src" + image + ">" );
     });
 
-    let Links = [];
+    
+    Links.push($("#links").val());
+    Links.forEach(function(link){
 
-    Links.foreach(function(link){
-
-  $("#links").append("<li>" + link + "</li>");
+  $("#links").append("<a href=" + link + ">" + "Link" + "</a>" );
     });
+  
 
-});
+    
+    
+    
+    });
